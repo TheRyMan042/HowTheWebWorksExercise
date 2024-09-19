@@ -1,0 +1,87 @@
+<!-- Ryan Hutchings -->
+<!-- Unit 18.1 - How The Web Works Exercise-->
+
+<!-- Part 1: Solidify Terminology-->
+<!-- 
+  1. HTTP stands for Hypertext Transfer Protocol. It's a set of rules for how clients and servers send and receive information.
+
+  2. URL stands for Uniform Resource Locator. It's the address of an unique resource (like a webpage) that people can have access to. 
+
+  3. DNS stands for Domain Name System. It's lets a server use a unique name for an IP address.
+
+  4. A query string is a part of the URL and uses parameters to look into the resource/database.
+
+  5. The two commonly used HTTP verbs are GET and POST. GET only retrieves the data from the server without changing anything while POST will make changes into the database of the server.
+
+  6. An HTTP request is when a client sends a request to a server to get it's resources using HTTP protocols.
+
+  7. An HTTP response is when the server sends back a response (resources like HTML CSS, etc.) to the client using HTTP protcols.
+
+  8. An HTTP header adds additional information of what you want to see when requesting and responding. 
+
+  Request Header:
+  Ex: you can change what types of data get accepted (like application/json or text/html) using Accept.
+  Ex: you can request to change the language using Accept-Language.
+
+  Response Header:
+  Ex: you can find out the time it took the response to get to proxy cache using Age
+  Ex: you can find when the response finished loading using Expires
+
+  9. The process:
+
+    1. the browser will take the domain name it was given and turn it into an IP address to look for.
+
+    2. the browser will search the web for the IP address.
+
+    3. the server sends a response to the browser with either a status code of 200 if it's found or 404 if it's not found.
+
+    4. the browser displays the HTML using the DOM and retrieves all the resources needed.
+
+    5. the browser will start to send multiple requests to the server to get every resource it needs and receive a response back.
+-->
+
+<!-- Part 2: Practice Tools-->
+<!-- 
+  1. Using curl, make a GET request to the icanhazdadjoke.com API to find all jokes involving the word “pirate”
+
+  curl https://icanhazdadjoke.com -gets me a working page, it just tells me a joke
+
+  -----------------------------------------------------------
+  curl -X "GET" https://icanhazdadjoke.com/search?term=pirate
+
+  or 
+
+  curl https://icanhazdadjoke.com/search?term=pirate
+  
+  -gets me all of the pirate jokes
+
+  2. Use dig to find what the IP address is for icanhazdadjoke.com
+
+  dig icanhazdadjoke.com - gave me a lot of info about the website including the IP address
+
+  IP address - 172.67.198.173 
+
+  3. python3 -m http.server 50505 - started the server in Linux (use port 50505) and showed me the html file on my localhost
+  -http://localhost:50505/testingServer.html
+
+  <img src="C:\Users\hutch\OneDrive\Pictures\Screenshots\Screenshot (1058).png"> 
+-->
+
+<!-- Part 3: Explore Dev Tools-->
+<!-- on another html file -->
+
+<!-- Part 4: Explore the URL API -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing URL API</title>
+</head>
+
+<body>
+  <script src="testingURLAPIS.js"></script>
+</body>
+
+</html>

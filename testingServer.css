@@ -1,0 +1,18 @@
+/*Ryan Hutchings
+Unit 18.1 - How The Web Works Exercise*/
+
+body {
+  background-color: aqua;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 2em;
+}
+
+button {
+  font-size: large;
+}

@@ -1,0 +1,30 @@
+<!-- Ryan Hutchings -->
+<!-- Unit 18.1 - How The Web Works Exercise-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 3: Exploring Dev Tools</title>
+</head>
+
+<body>
+  <h1>A Simple Form</h1>
+  <form method="post" action="#something">
+    <label for="Name">Name:</label>
+    <input type="text" id="Name" name="name">
+    <label for="Date">Date:</label>
+    <input type="date" id="Date" name="date">
+    <label for="Age">Over 18:</label>
+    <input type="checkbox" id="Age" name="age">
+    <input type="submit" id="submitBtn">
+  </form>
+</body>
+
+</html>
+
+<!-- when the method is GET,  I see the results I put in the form in the URL and the action link is used-->
+
+<!-- when the method is POST, it shows the method changed to post,the action link is used, and the data in the queries in the URL are gone. However, the webpage stops working because the server doesn't support the method (405 code). In the response header, I noticed whats allowed like GET, HEAD, and OPTIONS and some other headers-->
